@@ -7,7 +7,7 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 
 @NativePlugin()
-public class MovesensePlugin extends Plugin {
+public class Movesense extends Plugin {
 
     @PluginMethod()
     public void echo(PluginCall call) {

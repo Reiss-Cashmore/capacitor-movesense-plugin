@@ -1,6 +1,6 @@
 
   Pod::Spec.new do |s|
-    s.name = 'MovesensePlugin'
+    s.name = 'CapacitorMovesensePlugin'
     s.version = '0.0.1'
     s.summary = 'Movesense plugin'
     s.license = 'MIT'

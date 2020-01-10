@@ -1,9 +1,9 @@
 declare module "@capacitor/core" {
   interface PluginRegistry {
-    MovesensePlugin: MovesensePluginPlugin;
+    Movesense: MovesensePlugin;
   }
 }
 
-export interface MovesensePluginPlugin {
+export interface MovesensePlugin {
   echo(options: { value: string }): Promise<{value: string}>;
 }

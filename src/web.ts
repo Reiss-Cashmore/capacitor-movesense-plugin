@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
-import { MovesensePluginPlugin } from './definitions';
+import { MovesensePlugin } from './definitions';
 
-export class MovesensePluginWeb extends WebPlugin implements MovesensePluginPlugin {
+export class MovesenseWeb extends WebPlugin implements MovesensePlugin {
   constructor() {
     super({
-      name: 'MovesensePlugin',
+      name: 'Movesense',
       platforms: ['web']
     });
   }
@@ -15,9 +15,9 @@ export class MovesensePluginWeb extends WebPlugin implements MovesensePluginPlug
   }
 }
 
-const MovesensePlugin = new MovesensePluginWeb();
+const Movesense = new MovesenseWeb();
 
-export { MovesensePlugin };
+export { Movesense };
 
 import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(MovesensePlugin);
+registerWebPlugin(Movesense);

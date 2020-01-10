@@ -3,6 +3,6 @@
 
 // Define the plugin using the CAP_PLUGIN Macro, and
 // each method the plugin supports using the CAP_PLUGIN_METHOD macro.
-CAP_PLUGIN(MovesensePlugin, "MovesensePlugin",
+CAP_PLUGIN(Movesense, "Movesense",
            CAP_PLUGIN_METHOD(echo, CAPPluginReturnPromise);
 )

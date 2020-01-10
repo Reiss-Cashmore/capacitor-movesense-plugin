@@ -1,5 +1,5 @@
 {
-  "name": "movesense-plugin",
+  "name": "capacitor-movesense-plugin",
   "version": "0.0.1",
   "description": "Movesense plugin",
   "main": "dist/esm/index.js",
@@ -24,7 +24,7 @@
     "dist/",
     "ios/",
     "android/",
-    "MovesensePlugin.podspec"
+    "CapacitorMovesensePlugin.podspec"
   ],
   "keywords": [
     "capacitor",
