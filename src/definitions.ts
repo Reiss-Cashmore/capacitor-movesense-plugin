@@ -6,4 +6,5 @@ declare module "@capacitor/core" {
 
 export interface MovesensePlugin {
   echo(options: { value: string }): Promise<{value: string}>;
+  
 }

@@ -2,21 +2,31 @@ PODS:
   - Capacitor (1.4.0):
     - CapacitorCordova (= 1.4.0)
   - CapacitorCordova (1.4.0)
+  - Movesense (1.39.0)
 
 DEPENDENCIES:
   - "Capacitor (from `../node_modules/@capacitor/ios`)"
   - "CapacitorCordova (from `../node_modules/@capacitor/ios`)"
+  - "Movesense (from `ssh://git@altssh.bitbucket.org:443/suunto/movesense-mobile-lib.git`)"
 
 EXTERNAL SOURCES:
   Capacitor:
     :path: "../node_modules/@capacitor/ios"
   CapacitorCordova:
     :path: "../node_modules/@capacitor/ios"
+  Movesense:
+    :git: "ssh://git@altssh.bitbucket.org:443/suunto/movesense-mobile-lib.git"
+
+CHECKOUT OPTIONS:
+  Movesense:
+    :commit: 72e54bca80fbccfca61820d59fca5d15a0ff2dbd
+    :git: "ssh://git@altssh.bitbucket.org:443/suunto/movesense-mobile-lib.git"
 
 SPEC CHECKSUMS:
   Capacitor: e548fe61e71fa160367a36387f54483647ca20f6
   CapacitorCordova: 17c1ed13e5303aa5153fb405adb4196cc56b40d5
+  Movesense: 591429997146001b681946ca1c95daf0de42de9f
 
-PODFILE CHECKSUM: 18edf3816e869cc37578950affc00fdd78ee0dcb
+PODFILE CHECKSUM: f83c40031c398558ed2444c50cad3ed73f167264
 
 COCOAPODS: 1.8.4
