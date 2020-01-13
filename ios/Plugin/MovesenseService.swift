@@ -1,3 +1,12 @@
+//
+//  MovesenseService.swift
+//  Plugin
+//
+//  Created by Reiss Cashmore on 13/01/2020.
+//  Copyright © 2020 Max Lynch. All rights reserved.
+//
+
+import Foundation
 import Movesense
 /// The main class for using the services from Movesense devices.
 /// This class offers a way to enumerate the devices and receive connected/disconnected
@@ -15,7 +24,7 @@ final public class MdsService: NSObject {
     public func shutdown() {
         self.mds!.deactivate();
     }
-    
+
     /// Start looking for Movesense devices
     public func startScan(_ deviceFound : @escaping (MovesenseDevice) -> (),
                           _ scanCompleted: @escaping () -> ()) {
