@@ -1,26 +1,18 @@
+# Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
-def capacitor_pods
+target 'Plugin' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Capacitor', :path => '../node_modules/@capacitor/ios'
-  pod 'CapacitorCordova', :path => '../node_modules/@capacitor/ios'
 
-end
-
-target 'Plugin' do
-  capacitor_pods
+  # Pods for IonicRunner
+  pod 'Capacitor'
   pod 'Movesense', :git => 'ssh://git@altssh.bitbucket.org:443/suunto/movesense-mobile-lib.git'
 end
 
 target 'PluginTests' do
-  capacitor_pods
-end
+  use_frameworks!
 
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '4.2'
-    end
-  end
+  pod 'Capacitor'
+  pod 'Movesense', :git => 'ssh://git@altssh.bitbucket.org:443/suunto/movesense-mobile-lib.git'
 end

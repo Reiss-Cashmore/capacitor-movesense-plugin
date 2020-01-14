@@ -1,7 +1,7 @@
 
   Pod::Spec.new do |s|
     s.name = 'CapacitorMovesensePlugin'
-    s.version = '0.0.1'
+    s.version = '0.0.5'
     s.summary = 'Movesense plugin'
     s.license = 'MIT'
     s.homepage = 'git+https://github.com/Reiss-Cashmore/capacitor-movesense-plugin'

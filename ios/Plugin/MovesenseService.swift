@@ -6,7 +6,8 @@
 //  Copyright © 2020 Max Lynch. All rights reserved.
 //
 
-import Foundation 
+import Foundation
+import Movesense
 /// The main class for using the services from Movesense devices.
 /// This class offers a way to enumerate the devices and receive connected/disconnected
 /// callbacks when the devices become available
